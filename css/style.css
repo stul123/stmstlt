@@ -132,6 +132,13 @@
     text-transform: none;
 }
 
+.menutop>li:last-child>ul {
+    left: auto;
+    right: 0;
+    width: 220px;
+    max-width: none;
+}
+
 .menutop ul:last-of-type {
     max-width: 29vw;
 }
@@ -977,7 +984,8 @@ button:hover,
     box-sizing: border-box;
     position: relative;
     color: #575656;
-    padding: 0 0 0 100px;
+    min-height: 58px;
+    padding: 0 0 0 70px;
 }
 
 .chooseitem:before {
@@ -987,10 +995,10 @@ button:hover,
     background-position: top;
     display: block;
     position: absolute;
-    top: 8px;
+    top: 0;
     left: 0;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     opacity: 0;
     transition: .8s .2s;
 }
